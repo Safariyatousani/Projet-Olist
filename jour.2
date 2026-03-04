@@ -1,0 +1,93 @@
+#  Gestion des listes
+#   0   1   2   3   4   5
+#  -6  -5  -4  -3  -2  -1
+# +----+----+----+----+----+----+
+# | I | N | S | E | E | C |
+# +----+----+----+----+----+----+
+#   0   1   2   3   4   5
+
+liste = ['I','N','S','E','E','C']
+print(type(liste))
+
+print(liste[1])
+print(liste[-1])
+print(liste[1:3])
+print(liste[:4])
+print(liste[1:])
+
+liste_mixte=[1,2,3,'toto',5,'tutu']
+print(liste_mixte)
+
+liste_employes= ['Sandrine','laurent','Nathan']
+
+for prenom in liste_employes :
+    print(prenom)
+    
+if 'Sandrine' in liste_employes : 
+    print("Un de vos employé se nomme Sandrine")
+    
+liste_employes[0]='Toto'
+print(liste_employes)
+
+liste_employes.insert (1,'titi')
+print(liste_employes)
+
+liste_employes.append("tutu")
+print(liste_employes)
+
+liste_employes.extend(['lolo',"lulu"])
+print(liste_employes)
+
+del liste_employes[0]
+print(liste_employes)
+
+liste_employes.sort(reverse = True)
+print(liste_employes)
+
+liste_imbriquee=[1,2,3,[4,5],6,7]
+print(liste_imbriquee[3][1])
+
+liste_nombre=[1,2,3,4,5,6,7,8,9,10]
+for nombre in liste_nombre:
+    liste_nombre.append(nombre *2)
+    print(liste_nombre)
+ 
+#la comprehension de liste
+liste=[]   
+liste=[i*2 for i in liste_nombre]
+print(liste)
+
+liste_nb=[-5,-4,-3,-2,-1,0,1,2,3,4,5]
+liste_entier_positif = []
+for i in liste_nb:
+    if i > 0 :
+      liste_entier_positif.append(i)
+print(liste_entier_positif)
+
+liste_comp=[]
+liste_comp=[i if i > 0 else i<0 for i in liste_nb]
+print(liste_comp)
+
+liste_nombres=[1,2,3,4,5,6,7,8,9,10]
+print(max(liste_nombres))
+print(min(liste_nombres))
+print(sum(liste_nombres))
+
+liste_giga = []
+liste_ethernet=["G/1","G/2"]
+for valeur in liste_ethernet:
+    liste_giga.append(valeur.replace("G","GIGA"))
+print(liste_giga)
+
+liste_film = []
+choix= "oui"
+while choix=="oui":
+   
+   film=imput("Veuillez saisir un film de votre choix")
+   if film in liste_film:
+       print("Le film existe déjà")
+   else:
+       liste_film.append(film)
+   
+   choix ==input("Voulez vous rajouter un film?")
+print(liste_film)
