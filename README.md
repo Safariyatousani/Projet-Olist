@@ -1,4 +1,4 @@
-# 🛒 Analyse E-Commerce Olist — Python | SQL | Power BI
+# 🛒 Analyse E-Commerce Olist - Python | SQL | Power BI
 
 ## 📌 Contexte
 Olist est une plateforme e-commerce brésilienne.
@@ -12,9 +12,9 @@ afin d'extraire des insights business actionnables.
 - Segmenter les clients via une analyse RFM
 
 ## 🛠️ Stack technique
-- **Python** — Pandas, Matplotlib, Seaborn
-- **SQL** — SQLite3 (analyses en mémoire)
-- **Power BI** — Dashboard interactif 3 pages
+- **Python** : Pandas, Matplotlib, Seaborn
+- **SQL** : SQLite3 (analyses en mémoire)
+- **Power BI** : Dashboard interactif 3 pages
 
 ## 📊 Analyses réalisées
 - Exploration des données (EDA) sur 5 tables
